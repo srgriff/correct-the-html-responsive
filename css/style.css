@@ -91,6 +91,13 @@ hr {
 	align-items: center;
 	text-transform: uppercase;
 }
+/*mobile i hope*/
+.content-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+}
+
 
 .main-article {
 	background-color: #e2e2e2;
@@ -125,6 +132,7 @@ hr {
 	color: #f2f2f2;
 	margin: 0 0 1.6rem;
 	font-size: 0.9rem;
+	border-radius: 0.6rem;
 }
 
 .main-sidebar_thumb {
@@ -170,15 +178,38 @@ hr {
 		align-items: center;
 	}
 
-	.main-article {
+
+	.content-grid {
+		display: flex;
+		flex-direction: row;
+		gap: 1.6rem;
+	}
+
+		.main-article {
+		flex: 0 0 60%;
+		width: 60%;
+	}
+
+	.main-sidebar {
+		flex: 0 0 40%;
+		width: 40%;
+	}
+
+	.main-sidebar_byline .byline_date {
+		display: block;
+	}
+
+	.article {
 		width: 60%;
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 
-	.main-sidebar {
+	.aside {
 		width: 40%;
 		border-radius: 0.6rem;
 		margin: 0;
 	}
 }
+
+
